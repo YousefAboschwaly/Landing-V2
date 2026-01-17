@@ -1,6 +1,10 @@
+import Header from "./sections/Header";
 
 export default function App() {
   return (
-    <div>App</div>
+    <div className="bg-primary">
+      <Header />
+    
+    </div>
   )
 }
