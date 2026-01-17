@@ -1,0 +1,47 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #26262b;
+}
+
+@layer base {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: "Inter", sans-serif;
+    color: white;
+    background: #26262b;
+    scroll-behavior: smooth;
+    letter-spacing: 1px;
+  }
+
+   h3 {
+      @apply font-semibold text-[26px] leading-[40.04px] tracking-[0px];
+    }
+  /* handle the Width of Container  */
+  .container {
+    @media (min-width: 1536px) {
+      max-width: 80rem !important; /* 1280px */
+    }
+  }
+}
+
+@layer components {
+  nav {
+    & .nav-link {
+      @apply text-sm font-medium text-white transition-colors hover:text-gray-300 tracking-[0.9px];
+    }
+  }
+
+  .setapp {
+    & h2 {
+      @apply font-semibold text-[36px] leading-[51.84px];
+    }
+    & p {
+      @apply text-[18px] leading-[32.04px] tracking-[0px];
+    }
+  }
+}
