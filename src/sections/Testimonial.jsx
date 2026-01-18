@@ -21,6 +21,8 @@ export default function TestimonialCard() {
 
   return (
     <section className="w-full mt-30 px-5 md:px-12 relative bg-linear-to-b from-primary from-0% via-primary via-50% to-[#fefefe] to-50%  ">
+
+
       <div className="bg-[#765070] relative rounded-[20px] overflow-hidden ">
 
 
@@ -90,6 +92,7 @@ export default function TestimonialCard() {
           />
         ))}
       </div>
+      
     </section>
   );
 }

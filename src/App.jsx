@@ -1,5 +1,6 @@
 import Header from "./sections/Header";
 import Setapp from "./sections/Setapp";
+import SetappInfo from "./sections/SetappInfo";
 import TestimonialCard from "./sections/Testimonial";
 
 export default function App() {
@@ -8,6 +9,7 @@ export default function App() {
       <Header />
       <Setapp />
       <TestimonialCard/>
+      <SetappInfo/>
     </div>
   );
 }
