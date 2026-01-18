@@ -19,7 +19,7 @@
   }
 
    h3 {
-      @apply font-semibold text-[26px] leading-[40.04px] tracking-[0px];
+      @apply font-semibold text-xl md:text-[26px] leading-[40.04px] tracking-[0px];
     }
   /* handle the Width of Container  */
   .container {

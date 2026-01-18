@@ -1,6 +1,6 @@
 export default function Setapp() {
   return (
-    <div className="setapp container mx-auto px-6 py-12 md:w-300 md:py-25.25 md:px-0 mt-10  border-y border-white/20 border-x-0 space-y-11 md:space-y-22  ">
+    <div className="setapp container mx-auto px-6 py-12 md:w-300 md:py-25.25 md:px-0 mt-10  border-y border-white border-x-0 space-y-11 md:space-y-22  ">
       <div className="flex flex-col lg:flex-row justify-between items-start gap-8  ">
         <h2>What you get on Setapp.</h2>
         <p className=" md:w-150 md:pr-8.75">
