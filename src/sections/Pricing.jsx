@@ -2,7 +2,7 @@ import React from "react";
 
 export default function PricingCard() {
   return (
-    <div className="  bg-linear-to-b from-[#fefefe] from-0% via-[#fefefe] via-50% to-primary to-50%  ">
+    <div className="  bg-linear-to-b from-[#fefefe] from-0% via-[#fefefe] via-50% to-[#2B2D32] to-50%  ">
       <div className="rounded-[20px]  min-h-125 md:h-[588px] px-8 mx-6 md:mx-14  md:px-19 py-12 md:pt-30 md:pb-23 bg-[#F5F5F5] text-primary flex flex-col justify-center shadow-sm">
         <div className="mb-6 md:mb-10">
           <img

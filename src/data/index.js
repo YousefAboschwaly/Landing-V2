@@ -27,7 +27,6 @@ export const NAV_LINKS = [
   },
 ];
 
-
 export const Testimonial_Links = [
   {
     quote:
@@ -48,13 +47,14 @@ export const Testimonial_Links = [
     image: "/images/image-2067.png",
   },
   {
-    quote: "The convenience of having all my essential apps in one place has made my workflow incredibly efficient.",
+    quote:
+      "The convenience of having all my essential apps in one place has made my workflow incredibly efficient.",
     name: "Emma Rodriguez",
     image: "/images/image-2067.png",
   },
-]
+];
 
- export  const testimonials = [
+export const testimonials = [
   // Page 1
   {
     quote:
@@ -98,81 +98,62 @@ export const Testimonial_Links = [
     handle: "@meredith.sweet.silberstein",
     bgColor: "bg-[#765070]",
   },
-  // // Page 2
-  // {
-  //   quote:
-  //     "Setapp changed how I work. Having access to all these premium apps for one price is incredible value.",
-  //   name: "David Chen",
-  //   handle: "@davidchendev",
-  //   platform: "twitter",
-  //   bgColor: "bg-[#C9D8D5]",
-  // },
-  // {
-  //   quote:
-  //     "Best subscription service for Mac apps! CleanMyMac and Bartender alone are worth it.",
-  //   name: "Sarah Miller",
-  //   handle: "@sarahmiller",
-  //   platform: "facebook",
-  //   bgColor: "bg-[#D8D5CC]",
-  // },
-  // {
-  //   quote:
-  //     "I discovered so many amazing apps through Setapp that I never knew existed. Total game changer!",
-  //   name: "James Wilson",
-  //   handle: "@jameswilson",
-  //   platform: "instagram",
-  //   bgColor: "bg-[#D5CCD8]",
-  // },
-  // // Page 3
-  // {
-  //   quote:
-  //     "As a designer, Setapp gives me access to tools I use daily. Pixelmator Pro, Sip, CleanShot X - all included!",
-  //   name: "Emma Thompson",
-  //   handle: "@emmathompson",
-  //   platform: "twitter",
-  //   bgColor: "bg-[#E8C9BF]",
-  // },
-  // {
-  //   quote:
-  //     "Setapp is like Netflix for Mac apps. Can't imagine going back to buying apps individually.",
-  //   name: "Michael Brown",
-  //   handle: "@michaelbrown",
-  //   platform: "youtube",
-  //   bgColor: "bg-[#D5CCD8]",
-  // },
-  // {
-  //   quote:
-  //     "The app discovery feature is amazing. Every week I find something new that improves my workflow.",
-  //   name: "Lisa Anderson",
-  //   handle: "@lisaanderson",
-  //   platform: "facebook",
-  //   bgColor: "bg-[#D9C9B0]",
-  // },
-  // // Page 4
-  // {
-  //   quote:
-  //     "Recommended Setapp to my entire team. We all use different apps but everyone finds value in it.",
-  //   name: "Robert Taylor",
-  //   handle: "@roberttaylor",
-  //   platform: "twitter",
-  //   bgColor: "bg-[#C9D8D5]",
-  // },
-  // {
-  //   quote:
-  //     "Ulysses through Setapp helped me finish my book. Forever grateful for this service!",
-  //   name: "Jennifer Davis",
-  //   handle: "@jenniferdavis",
-  //   platform: "instagram",
-  //   bgColor: "bg-[#E8C9BF]",
-  // },
-  // {
-  //   quote:
-  //     "The quality of apps on Setapp is consistently high. No bloatware, just genuinely useful tools.",
-  //   name: "Chris Martinez",
-  //   handle: "@chrismartinez",
-  //   platform: "youtube",
-  //   bgColor: "bg-[#D8D5CC]",
-  // },
+  // Page 2
+  {
+    quote:
+      "Setapp changed how I work. Having access to all these premium apps for one price is incredible value.",
+    name: "David Chen",
+    handle: "@davidchendev",
+    platform: "twitter",
+    bgColor: "bg-[#71719A]",
+  },
+  {
+    quote:
+      "Best subscription service for Mac apps! CleanMyMac and Bartender alone are worth it.",
+    name: "Sarah Miller",
+    handle: "@sarahmiller",
+    platform: "facebook",
+    bgColor: "bg-[#D9AE89]",
+  },
+  {
+    quote:
+      "I discovered so many amazing apps through Setapp that I never knew existed. Total game changer!",
+    name: "James Wilson",
+    handle: "@jameswilson",
+    platform: "instagram",
+    bgColor: "bg-[#765070]",
+  },
 ];
 
+export const column1Links = [
+  { label: "Home", href: "#" },
+  { label: "How It Works", href: "#" },
+  { label: "All Apps", href: "#" },
+  { label: "Pricing", href: "#" },
+  { label: "Setapp for Teams", href: "#" },
+  { label: "Blog", href: "#" },
+  { label: "Podcast", href: "#" },
+  { label: "Download", href: "#" },
+];
 
+export const column2Links = [
+  { label: "About", href: "#" },
+  { label: "Support", href: "#" },
+  { label: "Education Discount", href: "#" },
+  { label: "Family Plan", href: "#" },
+  { label: "For Developers", href: "#" },
+  { label: "Gift Cards", href: "#" },
+  { label: "Redeem Card or Code", href: "#" },
+  { label: "Setapp Reviews", href: "#" },
+  { label: "Affiliate Program", href: "#" },
+  { label: "Mac Developer Survey 2023", href: "#" },
+];
+
+export const column3Links = [
+  { label: "Getting started with Setapp", href: "#" },
+  { label: "Remote access to other Mac", href: "#" },
+  { label: "Fix macOS Ventura problems", href: "#" },
+  { label: "Best productivity apps", href: "#" },
+  { label: "Best YouTube downloaders", href: "#" },
+  { label: "Uninstall apps", href: "#" },
+];

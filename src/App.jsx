@@ -1,3 +1,4 @@
+import Footer from "./sections/Footer";
 import Header from "./sections/Header";
 import PricingCard from "./sections/Pricing";
 import Setapp from "./sections/Setapp";
@@ -13,6 +14,7 @@ export default function App() {
       <SetappInfo />
       <div className="w-full h-15 bg-[#fefefe]" />
       <PricingCard />
+      <Footer/>
     </div>
   );
 }
