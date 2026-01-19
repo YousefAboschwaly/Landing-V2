@@ -12,18 +12,34 @@ import SetappCard from "../components/setapp-info/SetappCard";
 
 export default function SetappInfo() {
   const [currentPage, setCurrentPage] = useState(0);
-  const [isMobile, setIsMobile] = useState(false);
+const [screenType, setScreenType] = useState("desktop");
 
-  useEffect(() => {
-    const checkMobile = () => {
-      setIsMobile(window.innerWidth < 768);
-    };
-    checkMobile();
-    window.addEventListener("resize", checkMobile);
-    return () => window.removeEventListener("resize", checkMobile);
-  }, []);
+useEffect(() => {
+  const checkScreen = () => {
+    const width = window.innerWidth;
 
-  const cardsPerPage = isMobile ? 1 : 3;
+    if (width < 768) {
+      setScreenType("mobile");
+    } else if (width < 1250) {
+      setScreenType("tablet");
+    } else {
+      setScreenType("desktop");
+    }
+
+    setCurrentPage(0); // مهم جدًا
+  };
+
+  checkScreen();
+  window.addEventListener("resize", checkScreen);
+
+  return () => window.removeEventListener("resize", checkScreen);
+}, []);
+
+
+const cardsPerPage =
+  screenType === "mobile" ? 1 :
+  screenType === "tablet" ? 2 :
+  3;
   const totalPages = Math.ceil(testimonials.length / cardsPerPage);
 
   const getCurrentTestimonials = () => {
@@ -42,7 +58,7 @@ export default function SetappInfo() {
   return (
     <section className="pt-20 md:pt-30 px-6 md:px-32.5 relative bg-[#fefefe] border-b border-gray-300">
       {/* Header */}
-      <div className="flex flex-col justify-center md:flex-row items-center md:justify-between mb-8 gap-4 md:gap-25">
+      <div className="flex flex-col justify-center lg:flex-row items-center lg:justify-between mb-8 gap-4 md:gap-25">
         <h2 className="text-[36px] tracking-[1.3px] leading-[47.88px] font-semibold text-primary">
           Setapp in your words.
         </h2>
@@ -82,6 +98,7 @@ export default function SetappInfo() {
           >
             <ChevronLeft className="w-8 h-8" strokeWidth={2} />
           </button>
+
           <button
             onClick={goToNext}
             className="w-10 h-10 flex items-center justify-center text-gray-400 hover:text-gray-900 transition-colors cursor-pointer"
@@ -102,9 +119,9 @@ export default function SetappInfo() {
             <ChevronLeft className="w-10 h-10" strokeWidth={2} />
           </button>
 
-          <div className="flex flex-col md:flex-row gap-6 items-center justify-center transition-all duration-500 ease-in-out px-10 md:px-0">
+          <div className="flex flex-col sm:flex-row gap-6 items-center justify-center transition-all duration-500 ease-in-out px-10 md:px-0">
             {getCurrentTestimonials().map((testimonial, index) => (
-              <div key={`${currentPage}-${index}`} className="w-full md:w-auto">
+              <div key={`${currentPage}-${index}`} className="w-full sm:w-1/2 md:w-auto">
                 <SetappCard
                   i={currentPage * cardsPerPage + index}
                   quote={testimonial.quote}
